@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tudien</title>
+</head>
+<body>
+<input id="value" placeholder="Moi ban nhap vao tu can tim"/>
+<button onclick="timKiem()">Dịch</button>
+<script>
+    let tv = ["vui", "buon", "tuc gian"];
+    let ta = ["glad", "sad", "mad"];
+    function timKiem() {
+        let giatri = document.getElementById("value").value;
+        let check = false;
+        for (let i = 0; i < tv.length; i++) {
+            if (giatri == tv[i]) {
+                alert("Có tìm thấy");
+                alert(ta[i]);
+                check = true;
+                break;
+            }
+        }
+        // if (check==false) alert("Khong tim thay");
+        if (!check) alert("Khong tim thay");
+    }
+
+        // function timKiem2(){
+        //     let giatri = document.getElementById("value").value;
+        //     let check = false;
+        //     for (let i = 0; i < tv.length; i++) {
+        //         if (giatri == tv[i]) {
+        //             alert("Có tìm thấy");
+        //             alert(ta[i]);
+        //             check=true;
+        //             // break;
+        //         }
+        //         else {
+        //             alert("Khong tim thay");
+        //         }
+        //     }
+        //     // if (check==false) alert("Khong tim thay");
+        //     if (!check) alert("Khong tim thay");
+    //     }
+    // }
+</script>
+</body>
+</html>
